@@ -1,0 +1,52 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-250px, -50%);
+  width: 500px;
+  background-color: white;
+  border-radius: 3px;
+  min-height: min-content;
+  transition: color 0.5s ease 0s;
+  box-shadow: 4px 4px 48px -27px rgba(34, 60, 80, 0.12);
+  padding: 20px 20px 20px 20px;
+  gap: 20px;
+}
+
+.title-quote {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 35px;
+  font-weight: 350;
+  max-height: min-content;
+  transition: opacity 0.2s ease 0s;
+  opacity: 0;
+}
+
+.title-author {
+  align-self: flex-end;
+  font-weight: 350;
+  transition: opacity 0.2s ease 0s;
+  opacity: 0;
+}
+
+.button-new-quote {
+  height: 40px;
+  width: 120px;
+  border: none;
+  align-self: flex-end;
+  box-shadow: 4px 4px 31px -18px rgba(34, 60, 80, 0.26);
+  font-size: 1rem;
+  border-radius: 4px;
+  transition: all 0.5s ease 0s;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    filter: opacity(70%);
+  }
+}
