@@ -9,11 +9,7 @@ const App: React.FC = () => {
     document.body.style.backgroundColor = color;
   }, [color]);
 
-  return (
-    <div>
-      <QuoteCard color={color} setColor={setColor} />
-    </div>
-  );
+  return <QuoteCard color={color} setColor={setColor} />;
 };
 
 export default App;
